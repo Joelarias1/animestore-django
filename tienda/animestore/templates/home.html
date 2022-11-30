@@ -1,0 +1,163 @@
+{% extends "base_generic.html" %}
+
+{% block tittle %} <title>AnimeStore - Inicio</title> {% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+    <!-- Background -->
+    <div class="vh-100 d-flex align-items-center" id="bgImg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-white" id="getStart">
+            <h1 class="display-4 text-white">Tienda de Productos Anime</h1>
+            <p>
+              Revisa nuestros ultimos productos. Carcasas, mangas, poleras,
+              merch, y más.<br />
+            </p>
+            <a href="#ourplans" class="btn text-white btnText" id="btnStart"
+              >Ver productos</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos pre-eliminares -->
+    <section id="ourplans">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h5 id="servTittle">Destacados</h5>
+            <h1 id="subsTittle">Ultimos productos</h1>
+            <p>
+              Te invitamos a revisar nuestros productos y a que nos dedicamos
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Producto 1 -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="product-1 align-items-center text-center">
+                <img src="{% static 'product1.jpg' %}" alt="" class="rounded" width="168" />
+                <h5 class="mt-5">Manga Boruto</h5>
+              </div>
+
+              <h6 class="priceTittle text-center">Precio:</h6>
+              <h4 class="priceServ text-center">14.99$</h4>
+
+              <div class="selectServ">
+                <a href="#"
+                  ><i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="product-1 align-items-center text-center">
+                <img src="{% static 'product2.jpeg' %}" alt="" class="rounded" width="160" />
+                <h5 class="mt-5">Manga Chainsaw Man</h5>
+              </div>
+
+              <h6 class="priceTittle text-center">Precio:</h6>
+              <h4 class="priceServ text-center">14.99$</h4>
+
+              <div class="selectServ">
+                <a href="#"
+                  ><i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+        
+        <!-- Producto 3 -->
+        <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="product-1 align-items-center text-center">
+                <img src="{% static 'product3.jpg' %}" alt="" class="rounded" width="155" />
+                <h5 class="mt-5">Manga Kimetsu no Yaiba</h5>
+
+              </div>
+
+              <h6 class="priceTittle text-center">Price:</h6>
+              <h4 class="priceServ text-center">14.99$</h4>
+
+              <div class="selectServ">
+                <a href="#"
+                  ><i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="product-1 align-items-center text-center">
+              <img src="{% static 'product4.jpg' %}" alt="" class="rounded" width="164" />
+              <h5 class="mt-5">Manga Fire Force</h5>
+            </div>
+
+            <h6 class="priceTittle text-center">Precio:</h6>
+            <h4 class="priceServ text-center">10.99$</h4>
+
+            <div class="selectServ">
+              <a href="#"
+                ><i class="fa-solid fa-circle-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="product-1 align-items-center text-center">
+              <img src="{% static 'product6.png' %}" alt="" class="rounded" width="166" />
+              <h5 class="mt-5">Manga One Piece</h5>
+            </div>
+
+            <h6 class="priceTittle text-center">Precio:</h6>
+            <h4 class="priceServ text-center">12.99$</h4>
+
+            <div class="selectServ">
+              <a href="#"
+                ><i class="fa-solid fa-circle-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+      
+      <!-- Producto 3 -->
+      <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="product-1 align-items-center text-center">
+              <img src="{% static 'product5.jpg' %}" alt="" class="rounded" width="166" />
+              <h5 class="mt-5">Manga Dragon Ball</h5>
+
+            </div>
+
+            <h6 class="priceTittle text-center">Price:</h6>
+            <h4 class="priceServ text-center">10.99$</h4>
+
+            <div class="selectServ">
+              <a href="#"
+                ><i class="fa-solid fa-circle-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      </div>
+    </section>
+
+    {% endblock %}
+
+
+  </body>
+</html>

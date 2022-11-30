@@ -1,0 +1,67 @@
+{% extends "base_generic.html" %}
+
+{% block tittle %} <title>AnimeStore - Registrarse</title> {% endblock %}
+
+
+{% block content %}
+
+    <!-- Contacto -->
+
+    <section class="vh-100 gradient-custom" id="bgImg">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-2">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">Create New User</h2>
+                    <p class="text-white-50 mb-5">Please fill the form</p>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-outline">
+                          <input type="text" id="#" class="form-control" />
+                          <label class="form-label" for="form3Example1">First name</label>
+
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example2" class="form-control" />
+                          <label class="form-label" for="form3Example2">Last name</label>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form3Example3" class="form-control" />
+                      <label class="form-label" for="form3Example3">Email address</label>
+                    </div>
+    
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example4" class="form-control" />
+                      <label class="form-label" for="form3Example4">Password</label>
+                    </div>
+
+      
+                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+      
+                    <button class="btn text-white btn-lg px-5" type="submit" id="btnSign">Login</button>
+    
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    {% endblock %}
+
+  </body>
+</html>

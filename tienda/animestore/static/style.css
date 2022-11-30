@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #f5f8ff;
+  --main-color: #353536;
+  --red: #920c0c;
+  --redBlack: #690b0b;
+  --cardShadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+  --textShadow: 0px 7px 9px rgba(32, 14, 9, 0.3);
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  line-height: 1.7;
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sora", sans-serif;
+}
+
+.btnText {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--bg-color);
+}
+
+.navbar-brand {
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  width: 200px;
+}
+
+.navbar-brand img {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.active:hover {
+  transform: scale(1.05);
+  color: rgba(21, 21, 21);
+}
+
+
+#company {
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+
+/* Banner: */
+
+#banner {
+  background-color: rgba(21, 21, 21);
+}
+
+#bgImg {
+  background-image: url(https://wallpaper.dog/large/10993537.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+#bgImg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 20, 51, 0.6);
+  z-index: -1;
+}
+
+#getStart h1 p {
+  font-family: "Sora", sans-serif;
+  text-shadow: var(--textShadow);
+}
+
+#getStart h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+  text-shadow: var(--textShadow);
+}
+
+#getStart p {
+  font-weight: 300;
+}
+
+/* planes servicios productos - sobre nosotros */
+
+#ourplans {
+  background-color: var(--bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#servTittle {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+#subsTittle {
+  font-weight: bold;
+}
+
+.card-effect {
+  box-shadow: var(--cardShadow);
+  background-color: var(--bg-color);
+  padding: 50px;
+  transition: all 0.35s ease;
+  color: var(--main-color);
+  margin-bottom: 15px;
+  flex: none;
+}
+
+.iconbox i {
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.planTittle {
+  font-weight: bold;
+  background-color: var(--red);
+  color: var(--bg-color);
+  border-radius: 25px;
+  padding: 3px;
+}
+
+.servList {
+  margin-top: 15px;
+}
+
+.servList i {
+  font-size: 20px;
+  text-align: start;
+}
+
+.selectServ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.selectServ i {
+  font-size: 50px;
+  color: var(--red);
+  margin-top: 15px;
+}
+
+.priceServ {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 35px;
+  margin: 10px;
+}
+
+.priceTittle {
+  font-weight: 500;
+}
+
+.priceType {
+  font-weight: lighter;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.card-effect:hover {
+  transform: translateY(-5px);
+  transform: scale(1.03);
+}
+
+.selectServ i:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* banner de features */
+
+.col-img {
+    background-image: url(https://1.bp.blogspot.com/-yNGZzD1tYyg/X42usznrZqI/AAAAAAAAwcc/Yil2zQXZTFcL7ysDvKE1y4eEOrUybLU8gCPcBGAYYCw/s2048/panini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+  
+  }
+  
+  #textFeatures {
+    padding-top: 50px;
+    padding-bottom: 60px; 
+  }
+
+
+
+
+
+/* Contacto */
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+/* Buttons: */
+
+#btnStart {
+  width: 250px;
+  margin-top: 15px;
+}
+
+#btnSign,
+#btnStart,
+#btnSubmit
+{
+  background-color: var(--red);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#btnSign:hover,
+#btnSubmit:hover,
+#btnStart:hover {
+  background-color: var(--redBlack);
+  transform: scale(1.04);
+}
