@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, category, imageProduct
+from .models import Product, category, contactUs
 # Register your models here.
 
 
@@ -17,9 +17,14 @@ class categoryAdmin(admin.ModelAdmin):
     list_filter = ('typeOf',)
     inlines = [ProductInline]
     
+class commentsAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'comment')
+
+    
     
     
 
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(category, categoryAdmin)
+admin.site.register(contactUs, commentsAdmin)

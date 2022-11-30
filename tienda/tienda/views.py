@@ -1,8 +1,9 @@
 from django.http import HttpResponse
 from django.template import Template, Context
-from django.template.loader import get_template
-from django.shortcuts import render
-from animestore.models import Product, imageProduct, category
+from django.shortcuts import render, redirect
+from animestore.models import Product, imageProduct, category, contactUs
+from animestore.forms import newCommentForm
+from django.contrib import messages
 
 def home(request):
     return render(request, "home.html")
@@ -10,8 +11,16 @@ def home(request):
 def about(request):
     return render(request, "about.html")
 
-def contact(request):
-    return render(request, "contact.html")
+def contact(request):  
+    form = newCommentForm()
+    if request.method == 'POST':
+        form = newCommentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            
+    context = {"form": newCommentForm()}
+    return render(request, "contact.html", context)
+
 
 def register(request):
     return render(request, "register.html")
