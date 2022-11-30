@@ -15,6 +15,7 @@ class Product(models.Model):
     price = models.IntegerField(help_text="Price", null=True)
     category = models.ForeignKey('category', on_delete=models.SET_NULL, null=True)
     image = models.ImageField(upload_to="img/products")
+    description = models.CharField(max_length=500, help_text="Product Description", default="Product Descr")
     
 
     class Meta:

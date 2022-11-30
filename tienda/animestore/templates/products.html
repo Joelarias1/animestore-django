@@ -6,43 +6,45 @@
 {% block content %}
 
 <section id="ourplans">
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-        <div class="col-md-8 mx-auto text-center">
-            <h5 id="servTittle">Destacados</h5>
-            <h1 id="subsTittle">Ultimos productos</h1>
+            <div class="col-md-8 mx-auto text-center mb-5">
+            <h5 id="servTittle">Our Products</h5>
+            <h1 id="subsTittle">Last Products</h1>
             <p>
-            Te invitamos a revisar nuestros productos y a que nos dedicamos
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus explicabo perferendis id corporis porro modi.
             </p>
+            </div>
         </div>
-    </div>
-<div class="row">
+        {% for product in products %}
 
-{% for product in products %}
-
-    <div class="col-lg-4 col-sm-6">
-        <div class="card-effect">
-            <img src="{{product.image.url}}" alt="" class="rounded" width="155" />
-            <h5 class="mt-5">{{product.name}}</h5>
-            <h6 class="priceTittle text-center">Price:</h6>
-            <h4 class="priceServ text-center">{{product.price}} USD</h4>
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10">
+                <div class="row p-4 bg-white border rounded mt-2">
+                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="{{product.image.url}}"></div>
+                    <div class="col-md-6 mt-1">
+                        <h5>{{product.name}}</h5>
+                        <div class="d-flex flex-row">
+                            <div class="ratings mr-2"></div><span>Stock: {{product.stock}}</span>
+                        </div>
+                        <p class="text-justify para mb-0">{{product.description}}<br><br></p>
+                    </div>
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                        <div class="d-flex flex-row align-items-center">
+                            <h4 class="mr-1">${{product.price}} USD</h4>
+                        </div>
+                        <h6 class="text-success">Free shipping</h6>
+                        <div class="d-flex flex-column mt-4"><button class="btn btn-danger text-white" type="button">Details</button><button class="btn btn-outline-dark btnText mt-2">Add to wishlist</button></div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </div>
-    {% endfor %}
+        {% endfor %}
 
     </div>
-</div>
+
 </section>
-
-
-
-
-
-
-
-
-
-
 
 {% endblock %}
 

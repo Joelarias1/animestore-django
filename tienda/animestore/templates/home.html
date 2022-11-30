@@ -2,22 +2,24 @@
 
 {% block tittle %} <title>AnimeStore - Inicio</title> {% endblock %}
 
-{% block content %}
 
 {% load static %}
+
+{% block content %}
 
     <!-- Background -->
     <div class="vh-100 d-flex align-items-center" id="bgImg">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 text-white" id="getStart">
-            <h1 class="display-4 text-white">Tienda de Productos Anime</h1>
-            <p>
-              Revisa nuestros ultimos productos. Carcasas, mangas, poleras,
-              merch, y más.<br />
+            <h1 class="display-4 text-white">Anime Store</h1>
+            <p class="font-weight-bold text-uppercase"><b>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea laudantium libero voluptate. 
+              </b>
+               <br/>
             </p>
-            <a href="#ourplans" class="btn text-white btnText" id="btnStart"
-              >Ver productos</a
+            <a href="{% url 'products' %}" class="btn text-white btnText" id="btnStart"
+              >See Products</a
             >
           </div>
         </div>
@@ -29,10 +31,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto text-center">
-            <h5 id="servTittle">Destacados</h5>
-            <h1 id="subsTittle">Ultimos productos</h1>
+            <h5 id="servTittle">Outstanding</h5>
+            <h1 id="subsTittle">Best seller</h1>
             <p>
-              Te invitamos a revisar nuestros productos y a que nos dedicamos
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus labore nemo possimus quod repudiandae, necessitatibus provident dolor facilis.
             </p>
           </div>
         </div>
@@ -45,7 +47,7 @@
                 <h5 class="mt-5">Manga Boruto</h5>
               </div>
 
-              <h6 class="priceTittle text-center">Precio:</h6>
+              <h6 class="priceTittle text-center">Price</h6>
               <h4 class="priceServ text-center">14.99$</h4>
 
               <div class="selectServ">
@@ -64,7 +66,7 @@
                 <h5 class="mt-5">Manga Chainsaw Man</h5>
               </div>
 
-              <h6 class="priceTittle text-center">Precio:</h6>
+              <h6 class="priceTittle text-center">Price:</h6>
               <h4 class="priceServ text-center">14.99$</h4>
 
               <div class="selectServ">
@@ -103,7 +105,7 @@
               <h5 class="mt-5">Manga Fire Force</h5>
             </div>
 
-            <h6 class="priceTittle text-center">Precio:</h6>
+            <h6 class="priceTittle text-center">Price:</h6>
             <h4 class="priceServ text-center">10.99$</h4>
 
             <div class="selectServ">
@@ -122,7 +124,7 @@
               <h5 class="mt-5">Manga One Piece</h5>
             </div>
 
-            <h6 class="priceTittle text-center">Precio:</h6>
+            <h6 class="priceTittle text-center">Price:</h6>
             <h4 class="priceServ text-center">12.99$</h4>
 
             <div class="selectServ">
@@ -156,8 +158,9 @@
       </div>
     </section>
 
-    {% endblock %}
 
+
+    {% endblock %}
 
   </body>
 </html>

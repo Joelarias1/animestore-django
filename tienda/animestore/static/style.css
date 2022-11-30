@@ -5,6 +5,8 @@
   list-style: none;
 }
 
+
+
 :root {
   --bg-color: #f5f8ff;
   --main-color: #353536;
@@ -13,6 +15,7 @@
   --cardShadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
   --textShadow: 0px 7px 9px rgba(32, 14, 9, 0.3);
 }
+
 
 body {
   font-family: "Sora", sans-serif;
@@ -219,10 +222,20 @@ h5 {
 
   /* Productos */
 
-.products-list{
-  display: flex;
-  flex-wrap: wrap;
+
+.cardProduct{
+  
+  width:350px;
+  height:370px;
 }
+
+.imageProduct{
+  position:absolute;
+  right:12px;
+  top:10px;
+}
+
+
 
 
 
@@ -240,6 +253,7 @@ h5 {
   margin-top: 15px;
 }
 
+
 #btnSign,
 #btnStart,
 #btnSubmit
@@ -249,9 +263,11 @@ h5 {
   font-weight: bold;
 }
 
+
 #btnSign:hover,
 #btnSubmit:hover,
 #btnStart:hover {
   background-color: var(--redBlack);
   transform: scale(1.04);
 }
+
