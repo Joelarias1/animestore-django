@@ -14,7 +14,7 @@ class Product(models.Model):
     stock = models.IntegerField(help_text="Stock")
     price = models.IntegerField(help_text="Price", null=True)
     category = models.ForeignKey('category', on_delete=models.SET_NULL, null=True)
-    image = models.ImageField(upload_to="img")
+    image = models.ImageField(upload_to="img/products")
     
 
     class Meta:
@@ -36,7 +36,7 @@ class category(models.Model):
     
 class imageProduct(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE);
-    image = models.ImageField(upload_to="img")
+    image = models.ImageField(upload_to="img/products")
     
     def __str__(self):
         return f'{Product.name}'

@@ -5,6 +5,37 @@
 
 {% block content %}
 
+<section id="ourplans">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+            <h5 id="servTittle">Destacados</h5>
+            <h1 id="subsTittle">Ultimos productos</h1>
+            <p>
+            Te invitamos a revisar nuestros productos y a que nos dedicamos
+            </p>
+        </div>
+    </div>
+<div class="row">
+
+{% for product in products %}
+
+    <div class="col-lg-4 col-sm-6">
+        <div class="card-effect">
+            <img src="{{product.image.url}}" alt="" class="rounded" width="155" />
+            <h5 class="mt-5">{{product.name}}</h5>
+            <h6 class="priceTittle text-center">Price:</h6>
+            <h4 class="priceServ text-center">{{product.price}} USD</h4>
+        </div>
+    </div>
+    {% endfor %}
+
+    </div>
+</div>
+</section>
+
+
+
 
 
 

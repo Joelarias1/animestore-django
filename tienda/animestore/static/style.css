@@ -217,6 +217,13 @@ h5 {
 
 
 
+  /* Productos */
+
+.products-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 /* Contacto */

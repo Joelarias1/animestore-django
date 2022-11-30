@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.template import Template, Context
 from django.template.loader import get_template
 from django.shortcuts import render
-from animestore.models import Product, imageProduct
+from animestore.models import Product, imageProduct, category
 
 def home(request):
     return render(request, "home.html")
@@ -17,6 +17,7 @@ def register(request):
     return render(request, "register.html")
 
 def products(request):
-
-    return render(request, "products.html")
+    products = Product.objects.all()
+    context = {"products": products}
+    return render(request, "products.html", context)
 
