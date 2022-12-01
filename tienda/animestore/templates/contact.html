@@ -6,47 +6,45 @@
 
 {% block content %}
 
-    <!-- Contacto -->
-    <section id="contact" class="bg-light">
-      <div class="container">
-        <div class="row mb-5 pt-5">
-          <div class="col-md-8 mx-auto text-center">
-            <h6 class="">Contact Us</h6>
-            <h1>Leave a message</h1>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio libero hic, perspiciatis consequuntur necessitatibus, similique minima, nostrum alias eaque minus officiis. Tempore alias animi quia repellat? Quisquam laboriosam quasi eaque?
-            </p>
-          </div>
-        </div>
-        <form action="" class="row g-3 justify-content-center" method="POST">
-          {% csrf_token %}
- 
-          <div class="col-md-5">
-            {{form.name}}
-          </div>
+<!-- Contacto -->
 
-          <div class="col-md-5">
-            {{form.lastName}}
-          </div>
-
-          <div class="col-md-10">
-              {{form.email}}
-          </div>
-          
-          <div class="col-md-10">
-            {{form.comment}}
-          </div> 
-
-          <div class="col-md-10 d-grid">
-            <button class="btn btn-text text-white" id="btnSubmit">Send</button>
-          </div>
-
-        </form>
+<section id="contact" class="bg-light vh-100">
+  <div class="container">
+    <div class="row mb-5 pt-5">
+      <div class="col-md-8 mx-auto text-center">
+        <h6 class="">Contact Us</h6>
+        <h1>Leave a message</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio libero hic, perspiciatis consequuntur necessitatibus, similique minima, nostrum alias eaque minus officiis. Tempore alias animi quia repellat? Quisquam laboriosam quasi eaque?
+        </p>
       </div>
-    </section>
+    </div>
+    <form action="" class="row g-3 justify-content-center" method="POST">
+      {% csrf_token %}
 
+      <div class="col-md-5">
+        {{form.name}}
+      </div>
 
-    {% endblock %}
+      <div class="col-md-5">
+        {{form.lastName}}
+      </div>
 
-  </body>
+      <div class="col-md-10">
+          {{form.email}}
+      </div>
+      
+      <div class="col-md-10">
+        {{form.comment}}
+      </div> 
+
+      <div class="col-md-10 d-grid">
+        <button class="btn btn-text text-white" id="btnSubmit">Send</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+{% endblock %}
+</body>
 </html>
