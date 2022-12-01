@@ -5,6 +5,9 @@
 
 {% block content %}
 
+{% load static %}
+
+
 <section id="ourplans">
     <div class="container mb-5">
         <div class="row">
@@ -25,9 +28,13 @@
                     <div class="col-md-6 mt-1">
                         <h5>{{product.name}}</h5>
                         <div class="d-flex flex-row">
-                            <div class="ratings mr-2"></div><span>Stock: {{product.stock}}</span>
+                            <div class="mr-2 bg-danger text-white rounded"><h6 class="text-align-center m-1">Stock: {{product.stock}}</h6></div>
+                            
                         </div>
-                        <p class="text-justify para mb-0">{{product.description}}<br><br></p>
+                        <div class="d-flex flex-row">
+                            <div class="mr-2 bg-success text-white rounded mt-2 font-weight-bold"><h6 class="text-align-center m-1">Category: {{product.category}}</h6></div>
+                        </div>
+                        <p class="text-justify para mb-0 mt-2">{{product.description}}<br><br></p>
                     </div>
                     <div class="align-items-center align-content-center col-md-3 border-left mt-1">
                         <div class="d-flex flex-row align-items-center">

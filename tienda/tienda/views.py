@@ -26,6 +26,7 @@ def register(request):
     return render(request, "register.html")
 
 def products(request):
+    total_categories = category.objects.all().count()
     products = Product.objects.all()
     context = {"products": products}
     return render(request, "products.html", context)
