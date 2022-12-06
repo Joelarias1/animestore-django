@@ -34,3 +34,10 @@ def products(request):
     context = {"products": products, "total_categories": total_categories}
     return render(request, "products.html", context)
 
+def addItems(request):
+    total_categories = category.objects.all().count()
+    #TotalCount Categories
+    
+    products = Product.objects.all()
+    context = {"products": products, "total_categories": total_categories}
+    return render(request, "additems.html", context)

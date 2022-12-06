@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .body{
+    overflow: hidden;
+  }
+  
+  :root {
+    --bg-color: #f5f8ff;
+    --main-color: #353536;
+    --purple: #920c92;
+    --purpleBlack: #710d71;
+    --purpleLight: #a832a8;
+    --Black2: #222122;
+    --checked: #45e952;
+    --notCheck:#c5c5c5;
+    --cardShadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+    --textShadow: 0px 7px 9px rgba(32,14,9,0.5);
+  
+  }
+  
+.sidebar-container{
+    min-height: 100vh;
+    outline:none;
+    text-decoration: none;
+}
+
+
+.sidebar-container .logo {
+    padding: .875rem 1.25rem;
+}
+
+.sidebar-container .menu{
+    width: 18rem;
+}
+
+
+.bgSidebar {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+.menu a{
+  text-decoration: none;
+  color: var(--bg-color);
+}
+
+.menu a i{
+  font-size: 20px;
+}
+
+.profile {
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+
+.profileIcon {
+  font-size: 15px;
+  margin: 5px;
+  color: var(--bg-color);
+}
+
+
+.select {
+  border-bottom: 1px solid rgba(4,15,22,0.3);
+  color: var(--bg-color);
+}
+
+.select:hover{
+  background-color: var(--Black2);
+  color: var(--bg-color);
+  transform: scale(1.04);
+
+}
+
+/* Content */
+
+#content {
+  overflow-y: auto;
+  height: 100vh;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 25px;
+}
+
+
+
+/* Butto add */
+
+#buttonAdd {
+    width: 200px;
+}

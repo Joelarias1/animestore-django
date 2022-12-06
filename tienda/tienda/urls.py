@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import home, about, contact, register, products
+from .views import home, about, contact, register, products, addItems
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -27,6 +27,8 @@ urlpatterns = [
     path('contact/', contact, name="contact"),
     path('register/', register, name="register"),
     path('products/', products, name="products"),
+    path('additem/', addItems,     name="additems"),
+    
 
 ]
 
