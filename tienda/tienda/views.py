@@ -17,6 +17,7 @@ def contact(request):
         form = newCommentForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Sent Successfully")
             
     context = {"form": newCommentForm()}
     return render(request, "contact.html", context)
@@ -27,7 +28,9 @@ def register(request):
 
 def products(request):
     total_categories = category.objects.all().count()
+    #TotalCount Categories
+    
     products = Product.objects.all()
-    context = {"products": products}
+    context = {"products": products, "total_categories": total_categories}
     return render(request, "products.html", context)
 

@@ -1,12 +1,10 @@
 {% extends "base_generic.html" %}
 
+{% block tittle %} {% endblock %}
 
-{% block tittle %} <title>AnimeStore - Contact Us</title> {% endblock %}
-
+{% load static %}
 
 {% block content %}
-
-<!-- Contacto -->
 
 <section id="contact" class="bg-light vh-100">
   <div class="container">
@@ -19,6 +17,7 @@
         </p>
       </div>
     </div>
+
     <form action="" class="row g-3 justify-content-center" method="POST">
       {% csrf_token %}
 
@@ -41,10 +40,11 @@
       <div class="col-md-10 d-grid">
         <button class="btn btn-text text-white" id="btnSubmit">Send</button>
       </div>
-
     </form>
   </div>
 </section>
+
 {% endblock %}
+
 </body>
 </html>

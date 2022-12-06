@@ -29,6 +29,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+#Import message
+MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
+
+
 # Application definition
 
 INSTALLED_APPS = [

@@ -2,12 +2,9 @@
 
 {% block tittle %} <title>AnimeStore - Products</title> {% endblock %}
 
-
-{% block content %}
-
 {% load static %}
 
-
+{% block content %}
 <section id="ourplans">
     <div class="container mb-5">
         <div class="row">
@@ -17,6 +14,15 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus explicabo perferendis id corporis porro modi.
             </p>
+            
+            <!-- <div class="row -align-items-start pt-2">
+                <h5 id="servTittle"> Categories</h5>
+                <div class="col"></div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+            </div> -->
+
+
             </div>
         </div>
         {% for product in products %}
@@ -48,12 +54,11 @@
             </div>
         </div>
         {% endfor %}
-
     </div>
-
 </section>
-
 {% endblock %}
+
+
 
 </body>
 </html>
