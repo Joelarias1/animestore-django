@@ -16,3 +16,11 @@ Basado en 3 Sprints de desarrollo, donde actualmente al 13-12-22 nos encontramos
 
 
 
+
+
+Visualización de productos en el Front:
+![photo1](https://user-images.githubusercontent.com/66278716/207467528-33365c40-fa8f-44b4-9010-782b07baa58e.png)
+
+
+Formulario de contacto:
+![photo2](https://user-images.githubusercontent.com/66278716/207467603-20b8ef9e-c4d7-41e7-b97b-140ae4a8409c.png)
