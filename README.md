@@ -1,4 +1,4 @@
-# animestoredjango
+# AnimeStore - Django
 Proyecto en Django para asignatura de Back-End. Tienda de productos. 
 
 
