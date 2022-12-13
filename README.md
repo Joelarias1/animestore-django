@@ -10,3 +10,9 @@ Para la instalación de forma local requerirá de los siguientes paquetes instal
 - Pillow  --> Paquete requerido para la subida de archivos como imagenes 
 
 
+Basado en 3 Sprints de desarrollo, donde actualmente al 13-12-22 nos encontramos en la fase:
+- Crear un metodo para agregar ejemplo productos, clientes, o lo que sea relacionado al sitio (En este caso productos)
+- Formulario que funcione la visualización en algún sitio (Se creó formulario de comentarios visualizable desde el admin personalizado) 
+
+
+
